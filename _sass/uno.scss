@@ -51,12 +51,33 @@ body {
  * Made by ZURB 2013 http://zurb.com/playground/foundation-icon-fonts-3
  * MIT License
  */
-@font-face {
-	font-family: "foundation-icons";
-	src: url("../fonts/foundation-icons/foundation-icons.eot");
-	src: url("../fonts/foundation-icons/foundation-icons.eot?") format("embedded-opentype"), url("../fonts/foundation-icons/foundation-icons.woff") format("woff"), url("../fonts/foundation-icons/foundation-icons.ttf") format("truetype"), url("../fonts/foundation-icons/foundation-icons.svg") format("svg");
+ @font-face {
+	font-family: 'iconfont';  /* project id 1423472 */
+	src: url('//at.alicdn.com/t/font_1423472_h7q6rfazn15.eot');
+	src: url('//at.alicdn.com/t/font_1423472_h7q6rfazn15.eot?#iefix') format('embedded-opentype'),
+	url('//at.alicdn.com/t/font_1423472_h7q6rfazn15.woff2') format('woff2'),
+	url('//at.alicdn.com/t/font_1423472_h7q6rfazn15.woff') format('woff'),
+	url('//at.alicdn.com/t/font_1423472_h7q6rfazn15.ttf') format('truetype'),
+	url('//at.alicdn.com/t/font_1423472_h7q6rfazn15.svg#iconfont') format('svg');
+  }
+
+.iconfont{
+    font-family:"iconfont" !important;
+	font-style: normal;
 	font-weight: normal;
-	font-style: normal; }
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	display: inline-block;
+	text-decoration: inherit; }
+
+// @font-face {
+// 	font-family: "foundation-icons";
+// 	src: url("../fonts/foundation-icons/foundation-icons.eot");
+// 	src: url("../fonts/foundation-icons/foundation-icons.eot?") format("embedded-opentype"), url("../fonts/foundation-icons/foundation-icons.woff") format("woff"), url("../fonts/foundation-icons/foundation-icons.ttf") format("truetype"), url("../fonts/foundation-icons/foundation-icons.svg") format("svg");
+// 	font-weight: normal;
+// 	font-style: normal; }
 .icon:before {
 	font-family: "foundation-icons";
 	font-style: normal;
@@ -1203,6 +1224,62 @@ hr {
 	color: #cccccc;
 	-webkit-font-smoothing: antialiased; }
 
+.home-cover{
+	display: block;
+	position: fixed;
+ 	z-index: 900;
+	width: 100%;
+	max-width: none;
+	height: 100%;
+	background: url(../images/home.png) top left no-repeat #666666;
+	background-size: 100% 100%; 
+}
+.home-cover--overlay {
+	display: block;
+	position: absolute;
+	z-index: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(95, 94, 94, 0.6);
+	background-image: -webkit-linear-gradient(-410deg, rgba(68, 68, 68, 0.6) 20%, rgba(0, 0, 0, 0.9));
+	background-image: linear-gradient(140deg,rgba(68, 68, 68, 0.6) 20%, rgba(0, 0, 0, 0.9)); }
+
+
+.home-main {
+	display: table;
+	width: 100%;
+	height: 100%; }
+
+	.home-main__inner {
+		display: table-cell;
+		vertical-align: middle;
+		position: relative;
+		z-index: 800;
+		padding: 0 60px; }
+
+	.home-main__content {
+		position: absolute;
+		background-color: #FFF;
+		// color: #FFF;
+		text-align: center;
+		margin: 0 auto; }
+
+	.home-main__content--fixed {
+		width: 480px;
+		transition: width 1s;
+		-webkit-transition: width 1s;
+		/* Safari */ }
+		
+	.home-inverted {
+		font-weight: 100;
+		text-align: left;
+		color: #FFF;
+		text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4); }
+		.panel-inverted a {
+			color: #FFF; }
+
 .panel-cover {
 	display: block;
 	position: fixed;
@@ -1211,7 +1288,7 @@ hr {
 	max-width: none;
 	height: 100%;
 	background: url(../images/background-cover.jpg) top left no-repeat #666666;
-	background-size: cover; }
+	background-size: 100% 100%; }
 
 .panel-cover--collapsed {
 	width: 40%;
@@ -1225,7 +1302,7 @@ hr {
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background-color: rgba(68, 68, 68, 0.6);
+	background-color: rgba(95, 94, 94, 0.6);
 	background-image: -webkit-linear-gradient(-410deg, rgba(68, 68, 68, 0.6) 20%, rgba(0, 0, 0, 0.9));
 	background-image: linear-gradient(140deg,rgba(68, 68, 68, 0.6) 20%, rgba(0, 0, 0, 0.9)); }
 
@@ -1368,14 +1445,29 @@ nav {
 
 .navigation {
 	display: inline-block;
-	float: left;
+	float: center;
 	position: relative;
 	margin: 0;
 	list-style-type: none; }
 
 .navigation__item {
 	display: inline-block;
-	margin: 0 2px 0 0;
+	margin: 0 20px 30px 0;
+	line-height: 1em; }
+	.navigation__item a {
+		display: block;
+		position: relative;
+		border-color: #FFF;
+		color: #FFF;
+		opacity: .8; }
+		.navigation__item a:hover {
+			color: #FFF;
+			border-color: #FFF;
+			opacity: 1; }
+
+.navigation__enter__item {
+	display: inline-block;
+	margin: 0 1px 1px 0;
 	line-height: 1em; }
 	.navigation__item a {
 		display: block;
