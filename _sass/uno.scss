@@ -1224,61 +1224,57 @@ hr {
 	color: #cccccc;
 	-webkit-font-smoothing: antialiased; }
 
+.home-background{
+	display: block;
+	width: 100%;
+	background: url(../images/home.png) top right no-repeat #b9b0b0;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+}
+
 .home-cover{
 	display: block;
-	position: fixed;
- 	z-index: 900;
+	// position: fixed;
+	z-index: 900;
 	width: 100%;
 	max-width: none;
 	height: 100%;
-	background: url(../images/home.png) top left no-repeat #666666;
-	background-size: 100% 100%; 
+	// background-attachment: fixed;
+	background: url(../images/background-cover.jpg) top left no-repeat #b9b0b0;
+	background-size: 100% 100%;
 }
 .home-cover--overlay {
 	display: block;
-	position: absolute;
+	// position: absolute;
 	z-index: 0;
 	top: 0;
 	right: 0;
 	bottom: 0;
 	left: 0;
+	background-attachment: fixed;
 	background-color: rgba(95, 94, 94, 0.6);
 	background-image: -webkit-linear-gradient(-410deg, rgba(68, 68, 68, 0.6) 20%, rgba(0, 0, 0, 0.9));
 	background-image: linear-gradient(140deg,rgba(68, 68, 68, 0.6) 20%, rgba(0, 0, 0, 0.9)); }
 
 
-.home-main {
-	display: table;
-	width: 100%;
-	height: 100%; }
 
-	.home-main__inner {
-		display: table-cell;
-		vertical-align: middle;
-		position: relative;
-		z-index: 800;
-		padding: 0 60px; }
+.home-content-wrapper {
+	z-index: 800;
+	position: relative;
 
-	.home-main__content {
-		position: absolute;
-		background-color: #FFF;
-		// color: #FFF;
-		text-align: center;
-		margin: 0 auto; }
+	max-width: 60%;
+	margin-left: 20%; 
+	background-attachment: fixed;
+	background-color: rgba(255, 255, 255, 0.6);
+	background-image: -webkit-linear-gradient(-410deg, rgba(255, 254, 254, 0.6) 20%, rgba(255, 255, 255, 0.9));
+	background-image: linear-gradient(140deg,rgba(204, 193, 193, 0.6) 20%, rgba(216, 200, 200, 0.9)); 
+}
 
-	.home-main__content--fixed {
-		width: 480px;
-		transition: width 1s;
-		-webkit-transition: width 1s;
-		/* Safari */ }
-		
-	.home-inverted {
-		font-weight: 100;
-		text-align: left;
-		color: #FFF;
-		text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4); }
-		.panel-inverted a {
-			color: #FFF; }
+.home-content-wrapper__inner {
+	margin: 0 10%;
+	padding: 50px 0;
+	
+}
 
 .panel-cover {
 	display: block;
