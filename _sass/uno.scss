@@ -1313,6 +1313,11 @@ hr {
 	margin: 20px auto;
 	border-top: 1px solid rgba(255, 255, 255, 0.14); }
 
+.panel-cover__divider_content {
+	width: 80%;
+	margin: 10px auto;
+	border-top: 1px solid rgba(255, 255, 255, 0.14); }
+
 .panel-cover__divider--secondary {
 	width: 15%; }
 
@@ -1443,12 +1448,12 @@ nav {
 	display: inline-block;
 	float: center;
 	position: relative;
-	margin: 0;
+	margin: 20px 0 0 20px;
 	list-style-type: none; }
 
 .navigation__item {
 	display: inline-block;
-	margin: 0 20px 30px 0;
+	margin: 0 10px 10px 0;
 	line-height: 1em; }
 	.navigation__item a {
 		display: block;
