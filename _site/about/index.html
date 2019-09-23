@@ -33,7 +33,7 @@
   <meta name="msapplication-TileImage" content="/images/favicons/mstile-144x144.png">
   <meta name="theme-color" content="#ffffff">
   
-  <link rel="stylesheet" href="/css/main.css?1569252982072733000">
+  <link rel="stylesheet" href="/css/main.css?1569253838701242000">
   <link rel="canonical" href="http://localhost:4000/about/">
   <link rel="alternate" type="application/rss+xml" title="司镜小筑" href="/feed.xml">
 </head>
@@ -206,68 +206,43 @@ gitment.render('gitmentContainer');
 <p><strong>友情链接</strong></p>
 
 <ul>
-  <li><a href="www.apachecn.org"><strong>ApacheCN：</strong> 东半球最大的女装大佬汇集地</a></li>
+  <li><a href="www.apachecn.org"><strong>ApacheCN:</strong> 东半球最大的女装大佬汇集地</a></li>
+  <li><a href="likedge.top"><strong>likedge.top:</strong> 张一极</a></li>
 </ul>
 
 <p><code class="highlighter-rouge">记得点击小心心哦</code> <code class="highlighter-rouge">评论都会有回复✧(≖ ◡ ≖✿)嘿嘿</code></p>
 
-<div id="container"></div>
-<link rel="stylesheet" href="https://billts.site/extra_css/gitment.css" />
+<!-- Gitalk 评论 start  -->
 
-<script src="https://billts.site/js/gitment.js"></script>
+<!-- Link Gitalk 的支持文件  -->
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
 
-<script>
-var gitment = new Gitment({
-  owner: 'sijing233', 
-  repo: 'sijing233.github.io', 
-  oauth: {
-    client_id: '99fe5034f5246a483316', 
-    client_secret: '7466ef41da45b0d84102b42d8acfc80de37e2166',
-  },
-})
-gitment.render('container')
+<script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+<script type="text/javascript">
+    var gitalk = new Gitalk({
+		clientID: `99fe5034f5246a483316`,
+		clientSecret: `7466ef41da45b0d84102b42d8acfc80de37e2166`,
+		repo: `sijing233.github.io`,
+		owner: 'sijing233',
+		admin: ['sijing233'],
+    });
+    gitalk.render('gitalk-container');
 </script>
 
-<!-- <div id="gitalk-container"></div>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
-<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
-<script>
-const gitalk = new Gitalk({
-  clientID: '99fe5034f5246a483316',
-  clientSecret: '7466ef41da45b0d84102b42d8acfc80de37e2166',
-  repo: 'https://sijing233.github.io',
-  owner: 'sijing233',
-  admin: ['sijing233'],
-  id: location.href,      // Ensure uniqueness and length less than 50
-  distractionFreeMode: false  // Facebook-like distraction free mode
-})
-gitalk.render('gitalk-container')
-</script> -->
+<!-- Gitalk end -->
 
       </div>
 
-      <div id="container"></div>
-<link rel="stylesheet" href="/comment/gitment.css">
-<script src="/comment/gitment.browser.js"></script>
-<script>
-var gitment = new Gitment({
-  owner: 'sijing233', 
-  repo: 'sijing233.github.io', 
-  oauth: {
-    client_id: '99fe5034f5246a483316', 
-    client_secret: '7466ef41da45b0d84102b42d8acfc80de37e2166',
-  },
-})
-gitment.render('container')
-</script>
-
+      
 <!-- About me -->
 <footer class="footer">
   <span class="footer__copyright">&copy; 2019 sijing233. All rights reserved.</span>
 </footer>
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script type="text/javascript" src="/js/main.js?1569252982072733000"></script>
+<script type="text/javascript" src="/js/main.js?1569253838701242000"></script>
 
 
 

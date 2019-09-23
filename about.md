@@ -39,39 +39,28 @@ date:   2019-09-18 15:04:23
 
 **友情链接**
 
-- [**ApacheCN：** 东半球最大的女装大佬汇集地](www.apachecn.org)
+- [**ApacheCN:** 东半球最大的女装大佬汇集地](www.apachecn.org)
+- [**likedge.top:** 张一极](likedge.top)
 
 
 
 ```记得点击小心心哦``` ```评论都会有回复✧(≖ ◡ ≖✿)嘿嘿``` 
 
-<div id="container"></div>
-<link rel="stylesheet" href="https://billts.site/extra_css/gitment.css">
-<script src="https://billts.site/js/gitment.js"></script>
-<script>
-var gitment = new Gitment({
-  owner: 'sijing233', 
-  repo: 'sijing233.github.io', 
-  oauth: {
-    client_id: '99fe5034f5246a483316', 
-    client_secret: '7466ef41da45b0d84102b42d8acfc80de37e2166',
-  },
-})
-gitment.render('container')
-</script>
+<!-- Gitalk 评论 start  -->
 
-<!-- <div id="gitalk-container"></div>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
-<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
-<script>
-const gitalk = new Gitalk({
-  clientID: '99fe5034f5246a483316',
-  clientSecret: '7466ef41da45b0d84102b42d8acfc80de37e2166',
-  repo: 'https://sijing233.github.io',
-  owner: 'sijing233',
-  admin: ['sijing233'],
-  id: location.href,      // Ensure uniqueness and length less than 50
-  distractionFreeMode: false  // Facebook-like distraction free mode
-})
-gitalk.render('gitalk-container')
-</script> -->
+<!-- Link Gitalk 的支持文件  -->
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script> 
+<div id="gitalk-container"></div>     
+<script type="text/javascript">
+    var gitalk = new Gitalk({
+		clientID: `99fe5034f5246a483316`,
+		clientSecret: `7466ef41da45b0d84102b42d8acfc80de37e2166`,
+		repo: `sijing233.github.io`,
+		owner: 'sijing233',
+		admin: ['sijing233'],
+    });
+    gitalk.render('gitalk-container');
+</script> 
+
+<!-- Gitalk end -->
