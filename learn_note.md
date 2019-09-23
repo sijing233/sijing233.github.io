@@ -10,9 +10,14 @@ date:   2019-09-18 15:04:23
 
 数学类
 
+- 小学数学: 完结, [点击进入](https://sijing233.gitbook.io/math-elementary/)
+- 初中数学: 待搬家
+- 高中数学: 待更新
 
 计算机类
 
-|项目名称|内容简介|
-|--|--|
-| [go-learn](https://sijing233.gitbook.io/go-learn/)| go语言程序设计 | 
+
+- GO-Design: Go语言程序设计，更新中，待搬家, [点击进入](https://sijing233.gitbook.io/go-learn/)
+
+
+```司镜牌交流群：941953722```
