@@ -41,23 +41,22 @@ date:   2019-09-18 15:04:23
 
 - [**ApacheCN：** 东半球最大的女装大佬汇集地](www.apachecn.org)
 
-
-<!-- <div id="gitmentContainer"></div>
-<link rel="stylesheet" href="./comment/default.css">
-<script src="./comment/gitment.browser.js"></script>
+<div id="container"></div>
+<link rel="stylesheet" href="https://jjeejj.github.io/css/gitment.css">
+<script src="https://www.wenjunjiang.win/js/gitment.js"></script>
 <script>
 var gitment = new Gitment({
-    owner: 'sijing233',
-    repo: 'https://sijing233.github.io',
-    oauth: {
-        client_id: '99fe5034f5246a483316',
-        client_secret: '7466ef41da45b0d84102b42d8acfc80de37e2166',
-    },
-});
-gitment.render('gitmentContainer');
-</script> -->
+  owner: 'sijing233', 
+  repo: 'sijing233.github.io', 
+  oauth: {
+    client_id: '99fe5034f5246a483316', 
+    client_secret: '7466ef41da45b0d84102b42d8acfc80de37e2166',
+  },
+})
+gitment.render('container')
+</script>
 
-<div id="gitalk-container"></div>
+<!-- <div id="gitalk-container"></div>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
 <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
 <script>
@@ -71,4 +70,4 @@ const gitalk = new Gitalk({
   distractionFreeMode: false  // Facebook-like distraction free mode
 })
 gitalk.render('gitalk-container')
-</script>
+</script> -->
