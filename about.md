@@ -43,8 +43,8 @@ date:   2019-09-18 15:04:23
 
 
 <div id="gitmentContainer"></div>
-<link rel="stylesheet" href="https://billts.site/extra_css/gitment.css">
-<script src="https://billts.site/js/gitment.js"></script>
+<link rel="stylesheet" href="https://jjeejj.github.io/css/gitment.css">
+<script src="https://jjeejj.github.io/js/gitment.js"></script>
 <script>
 var gitment = new Gitment({
     owner: 'sijing233',
