@@ -42,7 +42,7 @@ date:   2019-09-18 15:04:23
 - [**ApacheCN：** 东半球最大的女装大佬汇集地](www.apachecn.org)
 
 
-<div id="gitmentContainer"></div>
+<!-- <div id="gitmentContainer"></div>
 <link rel="stylesheet" href="./comment/default.css">
 <script src="./comment/gitment.browser.js"></script>
 <script>
@@ -55,4 +55,20 @@ var gitment = new Gitment({
     },
 });
 gitment.render('gitmentContainer');
+</script> -->
+
+<div id="gitalk-container"></div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script>
+const gitalk = new Gitalk({
+  clientID: '99fe5034f5246a483316',
+  clientSecret: '7466ef41da45b0d84102b42d8acfc80de37e2166',
+  repo: 'https://sijing233.github.io',
+  owner: 'sijing233',
+  admin: ['sijing233'],
+  id: location.href,      // Ensure uniqueness and length less than 50
+  distractionFreeMode: false  // Facebook-like distraction free mode
+})
+gitalk.render('gitalk-container')
 </script>
