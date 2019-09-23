@@ -42,8 +42,8 @@ date:   2019-09-18 15:04:23
 - [**ApacheCN：** 东半球最大的女装大佬汇集地](www.apachecn.org)
 
 <div id="container"></div>
-<link rel="stylesheet" href="https://jjeejj.github.io/css/gitment.css">
-<script src="https://www.wenjunjiang.win/js/gitment.js"></script>
+<link rel="stylesheet" href="./comment/gitment.css">
+<script src="./comment/gitment.browser.js"></script>
 <script>
 var gitment = new Gitment({
   owner: 'sijing233', 
