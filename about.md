@@ -48,7 +48,7 @@ date:   2019-09-18 15:04:23
 <script>
 var gitment = new Gitment({
     owner: 'sijing233',
-    repo: 'https://github.com/sijing233/sijing233.github.io',
+    repo: 'https://sijing233.github.io',
     oauth: {
         client_id: '99fe5034f5246a483316',
         client_secret: '7466ef41da45b0d84102b42d8acfc80de37e2166',
