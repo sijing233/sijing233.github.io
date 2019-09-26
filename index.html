@@ -7,7 +7,6 @@ robots: noindex
   <ol class="post-list">
     {% for post in paginator.posts %}
       <li>
-        <!-- get title -->
         <h2 class="post-list__post-title post-title"><a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
         <p class="excerpt">{{ post.excerpt | strip_html }}&hellip;</p>
         <div class="post-list__meta">
@@ -17,8 +16,6 @@ robots: noindex
             {% endif %}
         </div>
         <p class="excerpt">{{ post.excerpt | strip_html }}&hellip;</p>
-        <!-- <hr class="post-list__divider">
-        <hr class="post-list__divider"> -->
       </li>
     {% endfor %}
   </ol>

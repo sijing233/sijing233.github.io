@@ -1,4 +1,4 @@
-@import 'https://fonts.googleapis.com/css?family=Raleway:400,700|Roboto+Slab:300,400)';
+// @import 'https://fonts.googleapis.com/css?family=Raleway:400,700|Roboto+Slab:300,400)';
 /* http://meyerweb.com/eric/tools/css/reset/
 	 v2.0 | 20110126
 	 License: none (public domain)
@@ -17,7 +17,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 	display: block; }
 
 body {
-	line-height: 1; }
+	line-height: 1; 
+
+}
 
 ol, ul {
 	list-style: none; }
@@ -1300,7 +1302,8 @@ hr {
 	left: 0;
 	background-color: rgba(95, 94, 94, 0.6);
 	background-image: -webkit-linear-gradient(-410deg, rgba(68, 68, 68, 0.6) 20%, rgba(0, 0, 0, 0.9));
-	background-image: linear-gradient(140deg,rgba(68, 68, 68, 0.6) 20%, rgba(0, 0, 0, 0.9)); }
+	background-image: linear-gradient(140deg,rgba(68, 68, 68, 0.6) 20%, rgba(0, 0, 0, 0.9)); 
+}
 
 .panel-cover__logo {
 	margin-bottom: .2em; }
@@ -1356,7 +1359,7 @@ hr {
 		color: #FFF; }
 
 .cover-navigation {
-	margin-top: 10px; }
+	margin-top: 0px; }
 
 .cover-navigation--social {
 	margin-left: 30px; }
@@ -1446,9 +1449,10 @@ nav {
 
 .navigation {
 	display: inline-block;
-	float: center;
+	// float: center;
 	position: relative;
-	margin: 20px 0 0 20px;
+	// top: 10px;
+	margin: 10px auto auto 10px;
 	list-style-type: none; }
 
 .navigation__item {
@@ -1469,17 +1473,18 @@ nav {
 .navigation__enter__item {
 	display: inline-block;
 	margin: 0 1px 1px 0;
-	line-height: 1em; }
-	.navigation__item a {
-		display: block;
-		position: relative;
-		border-color: #FFF;
-		color: #FFF;
-		opacity: .8; }
-		.navigation__item a:hover {
-			color: #FFF;
-			border-color: #FFF;
-			opacity: 1; }
+}
+	// line-height: 1em; }
+	// .navigation__item a {
+	// 	display: block;
+	// 	position: relative;
+	// 	border-color: #FFF;
+	// 	color: #FFF;
+	// 	opacity: .8; }
+	// 	.navigation__item a:hover {
+	// 		color: #FFF;
+	// 		border-color: #FFF;
+	// 		opacity: 1; }
 
 .navigation--social {
 	margin-left: 1.5em; }

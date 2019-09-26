@@ -49,8 +49,8 @@ date:   2019-09-18 15:04:23
 <!-- Gitalk 评论 start  -->
 
 <!-- Link Gitalk 的支持文件  -->
-<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-<script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script> 
+<link rel="stylesheet" href="/comment/gitalk.css">
+<script src="/comment/gitalk.min.js"></script> 
 <div id="gitalk-container"></div>     
 <script type="text/javascript">
     var gitalk = new Gitalk({
