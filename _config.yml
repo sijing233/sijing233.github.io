@@ -107,4 +107,4 @@ theme: landscape
 deploy:
   type: git
   repo: https://github.com/sijing233/sijing233.github.io.git
-  branch: main
+  branch: master
