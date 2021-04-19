@@ -1,11 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://yoursite-url/en/Hexo-Theme-LiveMyLife/</loc>
+    <loc>http://sijing233.com/cn/golang/golangs-02/</loc>
+    <lastmod>2021-04-19</lastmod>
+  </url>
+  <url>
+    <loc>http://sijing233.com/cn/leetcode-01/</loc>
+    <lastmod>2021-04-19</lastmod>
+  </url>
+  <url>
+    <loc>http://sijing233.com/cn/%E4%BB%A3%E7%A0%81%E8%A7%A3%E8%AF%BB%E8%AE%B0%E5%BD%95/</loc>
+    <lastmod>2021-04-19</lastmod>
+  </url>
+  <url>
+    <loc>http://sijing233.com/cn/welcome/</loc>
+    <lastmod>2021-04-17</lastmod>
+  </url>
+  <url>
+    <loc>http://sijing233.com/en/Hexo-Theme-LiveMyLife/</loc>
     <lastmod>2020-04-16</lastmod>
   </url>
   <url>
-    <loc>http://yoursite-url/cn/Hexo-Theme-LiveMyLife/</loc>
+    <loc>http://sijing233.com/cn/Hexo-Theme-LiveMyLife/</loc>
     <lastmod>2020-04-16</lastmod>
   </url>
 </urlset> 

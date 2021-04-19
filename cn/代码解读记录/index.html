@@ -116,10 +116,10 @@
   <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script> <![endif]-->
 
   <!-- ga & ba script hoook -->
-  <link rel="canonical" href="http://sijing233.com/archives/">
+  <link rel="canonical" href="http://sijing233.com/cn/代码解读记录/">
   <title>
     
-      司镜233
+      bug记录 - 司镜233
     
   </title>
 <meta name="generator" content="Hexo 5.4.0"></head>
@@ -326,18 +326,18 @@
     .body--light {
       /* intro-header */
       --intro-header-background-image-url-home: url('https://cdn.jsdelivr.net/gh/V-Vincen/V-Vincen.github.io/img/header_img/newhome_bg.jpg');
-      --intro-header-background-image-url-post: url('https://cdn.jsdelivr.net/gh/V-Vincen/V-Vincen.github.io');
-      --intro-header-background-image-url-page: url('https://cdn.jsdelivr.net/gh/V-Vincen/V-Vincen.github.io/img/header_img/archive_bg2.jpg');
+      --intro-header-background-image-url-post: url('https://cdn.jsdelivr.net/gh/V-Vincen/V-Vincen.github.io/img/header_img/lml_bg.jpg');
+      --intro-header-background-image-url-page: url('https://cdn.jsdelivr.net/gh/V-Vincen/V-Vincen.github.io//img/header_img/lml_bg.jpg');
     }
     .body--dark {
       --intro-header-background-image-url-home: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('https://cdn.jsdelivr.net/gh/V-Vincen/V-Vincen.github.io/img/header_img/newhome_bg.jpg');
-      --intro-header-background-image-url-post: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('https://cdn.jsdelivr.net/gh/V-Vincen/V-Vincen.github.io');
-      --intro-header-background-image-url-page: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('https://cdn.jsdelivr.net/gh/V-Vincen/V-Vincen.github.io/img/header_img/archive_bg2.jpg');
+      --intro-header-background-image-url-post: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('https://cdn.jsdelivr.net/gh/V-Vincen/V-Vincen.github.io/img/header_img/lml_bg.jpg');
+      --intro-header-background-image-url-page: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('https://cdn.jsdelivr.net/gh/V-Vincen/V-Vincen.github.io//img/header_img/lml_bg.jpg');
     }
     header.intro-header {
-       /*page*/
-        background-image: var(--intro-header-background-image-url-page);
-        /* background-image: url('https://cdn.jsdelivr.net/gh/V-Vincen/V-Vincen.github.io/img/header_img/archive_bg2.jpg'); */
+       /*post*/
+        background-image: var(--intro-header-background-image-url-post);
+        /* background-image: url('https://cdn.jsdelivr.net/gh/V-Vincen/V-Vincen.github.io/img/header_img/lml_bg.jpg'); */
       
     }
 
@@ -356,10 +356,42 @@
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
           
-          <div class="site-heading">
-            <h1>SiJing233</h1>
-            <!--<hr class="small">-->
-            <span class="subheading">Everything that kills me makes me feel alive</span>
+          <div class="post-heading">
+            <div class="tags">
+              
+              <a class="tag" href="/tags/#bbd" title="bbd">bbd</a>
+              
+            </div>
+            <h1>bug记录</h1>
+            <h2 class="subheading">bbd代码解读的全记录</h2>
+            <span class="meta">
+              Posted by sijing233 on
+              2021-04-19
+            </span>
+
+
+            
+            <!-- WordCount start -->
+            <div class="blank_box"></div>
+            <span class="meta">
+              Estimated Reading Time <span class="post-count">4</span> Minutes
+            </span>
+            <div class="blank_box"></div>
+            <span class="meta">
+              Words <span class="post-count">748</span> In Total
+            </span>
+            <div class="blank_box"></div>
+            <!-- WordCount end -->
+            
+            
+            <!-- 不蒜子统计 start -->
+            <span class="meta" id="busuanzi_container_page_pv">
+              Viewed <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span> Times
+            </span>
+            <!-- 不蒜子统计 end -->
+            
+
+
           </div>
           
         </div>
@@ -400,338 +432,277 @@
 	Friends Blog、
 	anchorjs、
 	) -->
-		<!-- Main Content -->
-<div class="container">
-  <div class="row">
+		<!-- Modify by Yu-Hsuan Yen -->
+<!-- Post Content -->
+<article>
+  <div class="container">
+    <div class="row">
+      <!-- Post Container -->
+      <div class="col-lg-8 col-lg-offset-1 col-md-10 col-md-offset-1 post-container">
+
+        <h2 id="mysql">mysql</h2>
+<blockquote>
+<p>&gt;&gt; sudo /usr/local/mysql/support-files/mysql.server start<br>
+Password:<br>
+Starting MySQL<br>
+.Logging to ‘/usr/local/mysql/data/sis-MacBook-Pro.local.err’.<br>
+… ERROR! The server quit without updating PID file (/usr/local/mysql/data/sis-MacBook-Pro.local.pid).</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">重装mysql</span><br></pre></td></tr></table></figure>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">http://47.93.236.68/app/home?uid=42237936309552&amp;osv=6.0.1&amp;appv=0.75&amp;cuid=869e2eeecfedcaaccb3ac5f2b4d8b6e3&amp;token=e7762f12b23d36ccb04aa424b8069c54&amp;os=os&amp;tstamp=1618819088187&amp;lastBannerId=9&amp;first=0&amp;action=init</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#123;<span class="attr">&quot;code&quot;</span>:<span class="number">0</span>,<span class="attr">&quot;message&quot;</span>:<span class="string">&quot;success&quot;</span>,<span class="attr">&quot;data&quot;</span>:&#123;<span class="attr">&quot;banner&quot;</span>:[&#123;<span class="attr">&quot;id&quot;</span>:<span class="number">8</span>,<span class="attr">&quot;type&quot;</span>:<span class="string">&quot;proverb&quot;</span>,<span class="attr">&quot;skipId&quot;</span>:<span class="number">4</span>,<span class="attr">&quot;tpl&quot;</span>:<span class="number">1</span>,<span class="attr">&quot;items&quot;</span>:[&#123;<span class="attr">&quot;id&quot;</span>:<span class="number">49</span>,<span class="attr">&quot;type&quot;</span>:<span class="number">2</span>,<span class="attr">&quot;content&quot;</span>:<span class="string">&quot;亲子阅读的好处&quot;</span>,<span class="attr">&quot;align&quot;</span>:<span class="number">0</span>,<span class="attr">&quot;fontSize&quot;</span>:<span class="number">2</span>,<span class="attr">&quot;fontColor&quot;</span>:<span class="number">2</span>,<span class="attr">&quot;imgType&quot;</span>:<span class="number">0</span>,<span class="attr">&quot;name&quot;</span>:<span class="string">&quot;亲子阅读&quot;</span>&#125;,&#123;<span class="attr">&quot;id&quot;</span>:<span class="number">1</span>,<span class="attr">&quot;type&quot;</span>:<span class="number">0</span>,<span class="attr">&quot;content&quot;</span>:<span class="string">&quot;https://baobaotiaodong.oss-cn-beijing.aliyuncs.com/100-5540824220471811696.png&quot;</span>,<span class="attr">&quot;align&quot;</span>:<span class="number">1</span>,<span class="attr">&quot;fontSize&quot;</span>:<span class="number">0</span>,<span class="attr">&quot;fontColor&quot;</span>:<span class="number">0</span>,<span class="attr">&quot;imgType&quot;</span>:<span class="number">0</span>,<span class="attr">&quot;name&quot;</span>:<span class="string">&quot;banner背景文字左侧背景&quot;</span>&#125;]&#125;,&#123;<span class="attr">&quot;id&quot;</span>:<span class="number">9</span>,<span class="attr">&quot;type&quot;</span>:<span class="string">&quot;course&quot;</span>,<span class="attr">&quot;skipId&quot;</span>:<span class="number">15</span>,<span class="attr">&quot;tpl&quot;</span>:<span class="number">1</span>,<span class="attr">&quot;items&quot;</span>:[&#123;<span class="attr">&quot;id&quot;</span>:<span class="number">72</span>,<span class="attr">&quot;type&quot;</span>:<span class="number">2</span>,<span class="attr">&quot;content&quot;</span>:<span class="string">&quot;亲子阅读课&quot;</span>,<span class="attr">&quot;align&quot;</span>:<span class="number">2</span>,<span class="attr">&quot;fontSize&quot;</span>:<span class="number">3</span>,<span class="attr">&quot;fontColor&quot;</span>:<span class="number">2</span>,<span class="attr">&quot;imgType&quot;</span>:<span class="number">0</span>,<span class="attr">&quot;name&quot;</span>:<span class="string">&quot;亲子阅读&quot;</span>&#125;,&#123;<span class="attr">&quot;id&quot;</span>:<span class="number">2</span>,<span class="attr">&quot;type&quot;</span>:<span class="number">0</span>,<span class="attr">&quot;content&quot;</span>:<span class="string">&quot;https://baobaotiaodong.oss-cn-beijing.aliyuncs.com/1001905632560698923520.png&quot;</span>,<span class="attr">&quot;align&quot;</span>:<span class="number">1</span>,<span class="attr">&quot;fontSize&quot;</span>:<span class="number">0</span>,<span class="attr">&quot;fontColor&quot;</span>:<span class="number">0</span>,<span class="attr">&quot;imgType&quot;</span>:<span class="number">0</span>,<span class="attr">&quot;name&quot;</span>:<span class="string">&quot;banner背景文字右侧背景&quot;</span>&#125;]&#125;],<span class="attr">&quot;course&quot;</span>:[&#123;<span class="attr">&quot;courseId&quot;</span>:<span class="number">22</span>,<span class="attr">&quot;title&quot;</span>:<span class="string">&quot;宝宝学说话&quot;</span>,<span class="attr">&quot;bookName&quot;</span>:<span class="string">&quot;宝宝学说话&quot;</span>,<span class="attr">&quot;bookImgUrl&quot;</span>:<span class="string">&quot;http://www.baobaodance.com/apk/baobaoxueshuohua.png&quot;</span>,<span class="attr">&quot;bookCoverImgUrl&quot;</span>:<span class="string">&quot;http://baobaodance.com/apk/blue2.png&quot;</span>,<span class="attr">&quot;startDate&quot;</span>:<span class="number">1617625800</span>,<span class="attr">&quot;startTime&quot;</span>:<span class="number">1230</span>,<span class="attr">&quot;duration&quot;</span>:<span class="number">20</span>,<span class="attr">&quot;prepare&quot;</span>:<span class="number">0</span>,<span class="attr">&quot;hasVisited&quot;</span>:<span class="number">0</span>,<span class="attr">&quot;studentNum&quot;</span>:<span class="number">6</span>,<span class="attr">&quot;visitorNum&quot;</span>:<span class="number">12</span>,<span class="attr">&quot;studentLimit&quot;</span>:<span class="number">6</span>,<span class="attr">&quot;visitorLimit&quot;</span>:<span class="number">40</span>&#125;,&#123;<span class="attr">&quot;courseId&quot;</span>:<span class="number">31</span>,<span class="attr">&quot;title&quot;</span>:<span class="string">&quot;4-6年级朗读课&quot;</span>,<span class="attr">&quot;bookName&quot;</span>:<span class="string">&quot;RAZ分级阅读--AA&quot;</span>,<span class="attr">&quot;bookImgUrl&quot;</span>:<span class="string">&quot;https://baobaotiaodong.oss-cn-beijing.aliyuncs.com/100-1787862301170194608.jpeg&quot;</span>,<span class="attr">&quot;bookCoverImgUrl&quot;</span>:<span class="string">&quot;https://baobaotiaodong.oss-cn-beijing.aliyuncs.com/1007871497316490390784.png&quot;</span>,<span class="attr">&quot;startDate&quot;</span>:<span class="number">1618228800</span>,<span class="attr">&quot;startTime&quot;</span>:<span class="number">1200</span>,<span class="attr">&quot;duration&quot;</span>:<span class="number">30</span>,<span class="attr">&quot;prepare&quot;</span>:<span class="number">0</span>,<span class="attr">&quot;hasVisited&quot;</span>:<span class="number">0</span>,<span class="attr">&quot;studentNum&quot;</span>:<span class="number">6</span>,<span class="attr">&quot;visitorNum&quot;</span>:<span class="number">8</span>,<span class="attr">&quot;studentLimit&quot;</span>:<span class="number">6</span>,<span class="attr">&quot;visitorLimit&quot;</span>:<span class="number">40</span>&#125;,&#123;<span class="attr">&quot;courseId&quot;</span>:<span class="number">32</span>,<span class="attr">&quot;title&quot;</span>:<span class="string">&quot;3年级朗读课&quot;</span>,<span class="attr">&quot;bookName&quot;</span>:<span class="string">&quot;RAZ分级阅读--AA&quot;</span>,<span class="attr">&quot;bookImgUrl&quot;</span>:<span class="string">&quot;https://baobaotiaodong.oss-cn-beijing.aliyuncs.com/100-1787862301170194608.jpeg&quot;</span>,<span class="attr">&quot;bookCoverImgUrl&quot;</span>:<span class="string">&quot;https://baobaotiaodong.oss-cn-beijing.aliyuncs.com/1007871497316490390784.png&quot;</span>,<span class="attr">&quot;startDate&quot;</span>:<span class="number">1618230000</span>,<span class="attr">&quot;startTime&quot;</span>:<span class="number">1220</span>,<span class="attr">&quot;duration&quot;</span>:<span class="number">20</span>,<span class="attr">&quot;prepare&quot;</span>:<span class="number">0</span>,<span class="attr">&quot;hasVisited&quot;</span>:<span class="number">0</span>,<span class="attr">&quot;studentNum&quot;</span>:<span class="number">6</span>,<span class="attr">&quot;visitorNum&quot;</span>:<span class="number">6</span>,<span class="attr">&quot;studentLimit&quot;</span>:<span class="number">6</span>,<span class="attr">&quot;visitorLimit&quot;</span>:<span class="number">40</span>&#125;],<span class="attr">&quot;myRoom&quot;</span>:[],<span class="attr">&quot;newapp&quot;</span>:&#123;<span class="attr">&quot;changes&quot;</span>:[<span class="string">&quot;优化送花动画&quot;</span>,<span class="string">&quot;修复视频卡顿问题&quot;</span>],<span class="attr">&quot;force&quot;</span>:<span class="number">1</span>,<span class="attr">&quot;title&quot;</span>:<span class="string">&quot;有新版本啦～&quot;</span>,<span class="attr">&quot;url&quot;</span>:<span class="string">&quot;http://www.baobaodance.com/apk/kuailedu.apk&quot;</span>,<span class="attr">&quot;version&quot;</span>:<span class="string">&quot;76&quot;</span>&#125;,<span class="attr">&quot;userInfo&quot;</span>:&#123;<span class="attr">&quot;uid&quot;</span>:<span class="number">42237936309552</span>,<span class="attr">&quot;name&quot;</span>:<span class="string">&quot;用户806&quot;</span>,<span class="attr">&quot;headimgurl&quot;</span>:<span class="string">&quot;http://xiangshuyan.com/static/default_icon.png&quot;</span>,<span class="attr">&quot;grade&quot;</span>:<span class="number">1</span>,<span class="attr">&quot;count&quot;</span>:<span class="number">26</span>,<span class="attr">&quot;speechNum&quot;</span>:<span class="number">2</span>,<span class="attr">&quot;askNum&quot;</span>:<span class="number">0</span>,<span class="attr">&quot;flowers&quot;</span>:<span class="number">11</span>,<span class="attr">&quot;courseNum&quot;</span>:<span class="number">0</span>,<span class="attr">&quot;learnDuration&quot;</span>:<span class="number">248</span>,<span class="attr">&quot;rank&quot;</span>:<span class="number">1</span>&#125;&#125;&#125;</span><br></pre></td></tr></table></figure>
+
+        <hr>
+        <!-- Pager -->
+        <ul class="pager">
+          
+          <li class="previous">
+            <a href="/cn/leetcode-01/" data-toggle="tooltip" data-placement="top" title="算法面试如何准备？">&larr; Previous Post</a>
+          </li>
+          
+          
+          <li class="next">
+            <a href="/cn/welcome/" data-toggle="tooltip" data-placement="top" title="欢迎来到我的博客">Next Post &rarr;</a>
+          </li>
+          
+        </ul>
+
+        
+        <!-- tip start -->
+        <!-- tip -->
+<!-- tip start -->
+<div class="tip">
+  <p>
+    
+      如果您喜欢此博客或发现它对您有用，则欢迎对此发表评论。 也欢迎您共享此博客，以便更多人可以参与。 如果博客中使用的图像侵犯了您的版权，请与作者联系以将其删除。 谢谢 ！
+    
+  </p>
+</div>
+<!-- tip end -->
+
+        <!-- tip end -->
+        
+
+        
+        <!-- Sharing Srtart -->
+        <!-- Social Social Share Post -->
+<!-- Docs:https://github.com/overtrue/share.js -->
+
+<div class="social-share" data-initialized="true" data-disabled="tencent ,douban ,qzone ,linkedin ,facebook ,google ,diandian" data-wechat-qrcode-helper="" align="center">
+  <ul class="list-inline text-center social-share-ul">
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-twitter">
+        <i class="fa fa-twitter fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a class="social-share-icon icon-wechat">
+        <i class="fa fa-weixin fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-weibo">
+        <i class="fa fa-weibo fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-qq">
+        <i class="fa fa-qq fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon" href="mailto:?subject=bug记录&body=Hi,I found this website and thought you might like it http://sijing233.com/cn/代码解读记录/">
+        <i class="fa fa-envelope fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+<!-- css & js -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css"> -->
+<script defer="defer" async="true" src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+
+        <!-- Sharing End -->
+        
+        <hr>
+
+        <!-- comments start -->
+        <!-- 1. gitalk comment -->
+
+  <!-- gitalk start -->
+  <!-- Docs:https://github.com/gitalk/gitalk/blob/master/readme-cn.md -->
+
+  <div id="gitalk-container"></div>
+
+  
+    <script src="https://cdn.jsdelivr.net/gh/V-Vincen/V-Vincen.github.io/js/comment/gitalk.js"></script>
+  
+
+  <script>
+    var gitalk = new Gitalk({
+      clientID: '99fe5034f5246a483316',
+      clientSecret: '2a992536d282bf29b2a7293ae4dc9d1b30381373',
+      repo: '',
+      owner: 'sijing233',
+      admin: 'sijing233',
+      id: 'Mon Apr 19 2021 11:01:15 GMT+0800', // Ensure uniqueness and length less than 50
+      distractionFreeMode: false, // Facebook-like distraction free mode
+      perPage: 10,
+      pagerDirection: 'last',
+      createIssueManually: false,
+      language: 'zh-CN',
+      proxy: 'https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token'
+    });
+    gitalk.render('gitalk-container');
+
+    var gtFolded = () => {
+      setTimeout(function () {
+        let markdownBody = document.getElementsByClassName("markdown-body");
+        let list = Array.from(markdownBody);
+        list.forEach(item => {
+          if (item.clientHeight > 250) {
+            item.classList.add('gt-comment-body-folded');
+            item.style.maxHeight = '250px';
+            item.title = 'Click to Expand';
+            item.onclick = function () {
+              item.classList.remove('gt-comment-body-folded');
+              item.style.maxHeight = '';
+              item.title = '';
+              item.onclick = null;
+            };
+          }
+        })
+      }, 800);
+    }
+  </script>
+
+  <!-- gitalk end -->
+
+
+<!-- 2. gitment comment -->
+
+
+<!-- 3. disqus comment -->
+
+
+        <!-- comments end -->
+        <hr>
+
+      </div>
+
+      <!-- Catalog: Tabe of Content -->
+      <!-- Table of Contents -->
+
+    
+      <aside id="sidebar">
+        <div id="toc" class="toc-article">
+        <strong class="toc-title">目录</strong>
+        
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#mysql"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">mysql</span></a></li></ol>
+        
+        </div>
+      </aside>
     
 
-    <!-- USE SIDEBAR -->
-    <!-- Post Container -->
-    <div class="
+
+
+      <!-- Sidebar Container -->
+      <div class="
                 col-lg-8 col-lg-offset-1
-                col-md-8 col-md-offset-1
-                col-sm-12
-                col-xs-12
-                post-container
-            ">
+                col-md-10 col-md-offset-1
+                sidebar-container">
 
-      <!-- Main Content -->
-<div class="container">
-  <div class="row">
-    <div class="col-lg-8 col-lg-offset-0 col-md-10 col-md-offset-1">
-      <!-- 归档列表 -->
-
-      
-
-      <!-- 归档列表 -->
-      
-      <div class="one-tag-list">
-        <span class="fa fa-calendar-times-o listing-seperator" id="2021">
-          <span class="tag-text">2021</span>
-        </span>
-        <ul>
-          
-          <li>
-            04-20
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/cn/golang/golangs-02/" style="color: #0085a1">
-              <span>
-                golang基础语法
-                
-                -- cn
-                
-              </span>
-            </a>
-          </li>
-          
-          <li>
-            04-19
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/cn/leetcode-01/" style="color: #0085a1">
-              <span>
-                算法面试如何准备？
-                
-                -- cn
-                
-              </span>
-            </a>
-          </li>
-          
-          <li>
-            04-19
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/cn/代码解读记录/" style="color: #0085a1">
-              <span>
-                bug记录
-                
-                -- cn
-                
-              </span>
-            </a>
-          </li>
-          
-          <li>
-            04-18
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/cn/welcome/" style="color: #0085a1">
-              <span>
-                欢迎来到我的博客
-                
-                -- cn
-                
-              </span>
-            </a>
-          </li>
-          
-        </ul>
-      </div>
-      
-      <div class="one-tag-list">
-        <span class="fa fa-calendar-times-o listing-seperator" id="2020">
-          <span class="tag-text">2020</span>
-        </span>
-        <ul>
-          
-          <li>
-            04-17
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/cn/Hexo-Theme-LiveMyLife/" style="color: #0085a1">
-              <span>
-                Hexo-Theme-LiveMyLife
-                
-                -- cn
-                
-              </span>
-            </a>
-          </li>
-          
-          <li>
-            04-17
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/en/Hexo-Theme-LiveMyLife/" style="color: #0085a1">
-              <span>
-                Hexo-Theme-LiveMyLife
-                
-              </span>
-            </a>
-          </li>
-          
-        </ul>
-      </div>
-      
-    </div>
-  </div>
-</div>
-
-
-      <!-- 如果开启评论功能 -->
-      
-    </div>
-
-    <!-- Sidebar Container -->
-<div class="
-    col-lg-3 col-lg-offset-0
-    col-md-3 col-md-offset-0
-    col-sm-12
-    col-xs-12
-    sidebar-container
-">
-    
-        <!-- Visitors -->
-<h5><a href="/">来访者</a></h5>
-
-<div class="widget">
-  <span>
-    Viewed <b><i><span id="busuanzi_value_site_pv"><i class="fa fa-spinner fa-spin"></i></span></i></b> Times
-  </span>
-  <br />
-  <span>
-    <b><i><span id="busuanzi_value_site_uv"><i class="fa fa-spinner fa-spin"></i></span></i></b> Visitors In Total
-  </span>
-</div>
-
-
-        <hr>
-    
         <!-- Featured Tags -->
+        
+        <section>
+          <!-- no hr -->
+          <h5>
+            <a href="/tags/">特色标签</a>
+          </h5>
+          <div class="tags">
+            
+            <a class="tag" href="/tags/#bbd" title="bbd">bbd</a>
+            
+          </div>
+        </section>
+        
 
-<section>
-  <h5><a href="/tags/">特色标签</a></h5>
-  <div class="tags">
-    
-    
-    <a href="/tags/#Hexo-Theme-LiveMyLife" title="Hexo-Theme-LiveMyLife" rel="3">Hexo-Theme-LiveMyLife</a>
-    
-    
-    
-    <a href="/tags/#leetcode" title="leetcode" rel="1">leetcode</a>
-    
-    
-    
-    <a href="/tags/#bbd" title="bbd" rel="1">bbd</a>
-    
-    
-    
-    <a href="/tags/#golangs" title="golangs" rel="1">golangs</a>
-    
-    
-  </div>
-</section>
-
-
-        <hr>
-    
-        <!-- Short About -->
-<section class="visible-md visible-lg">
-  <h5><a href="/about/">关于自己</a></h5>
-  <div class="short-about">
-
-    
-    <img id="avatar_pic" src="/img/avatar/428aea3fe6b811ef.jpg" alt="avatar_pic" style="box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, .5);
-    -moz-box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, .5);
-    -webkit-box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, .5);" />
-    
-
-    
-    <p>Fat people have no future, either thin or die...</p>
-    
-
-    <!-- SNS Link -->
-    <ul class="list-inline">
-      
-
-      
-      <li>
-        <a target="_blank" href="https://github.com/sijing233">
-          <span class="fa-stack fa-lg">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-          </span>
-        </a>
-      </li>
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-      <li>
-        <a target="_blank" href="http://weibo.com/司镜233">
-          <span class="fa-stack fa-lg">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
-          </span>
-        </a>
-      </li>
-      
-
-    </ul>
-  </div>
-</section>
-
-        <hr>
-    
-        <!-- RECENT POSTS -->
-
-<h5><a href="/">最近博文</a></h5>
-<div class="widget">
-  <ul>
-    
-    <a href="../cn/golang/golangs-02/">
-      <li>golang基础语法</li>
-    </a>
-    
-    <a href="../cn/leetcode-01/">
-      <li>算法面试如何准备？</li>
-    </a>
-    
-    <a href="../cn/%E4%BB%A3%E7%A0%81%E8%A7%A3%E8%AF%BB%E8%AE%B0%E5%BD%95/">
-      <li>bug记录</li>
-    </a>
-    
-    <a href="../cn/welcome/">
-      <li>欢迎来到我的博客</li>
-    </a>
-    
-    <a href="../en/Hexo-Theme-LiveMyLife/">
-      <li>Hexo-Theme-LiveMyLife</li>
-    </a>
-    
-  </ul>
-</div>
-
-
-        <hr>
-    
         <!-- Friends Blog -->
-
-<h5><a href="/">链友</a></h5>
-<ul class="list-inline">
-  
-  <li><a href="https://v-vincen.life/" target="_blank">V_Vincen</a></li>
-  
-  <li><a href="http://beantech.org" target="_blank">Bean Tech</a></li>
-  
-  <li><a href="http://huangxuan.me" target="_blank">Hux Blog</a></li>
-  
-  <li><a href="https://hexo.io/" target="_blank">Hexo</a></li>
-  
-</ul>
-
-
+        
         <hr>
-    
-        <!-- Archives -->
+        <h5>链友</h5>
+        <ul class="list-inline">
 
-<h5><a href="/archives/">archives</a></h5>
-<div class="widget">
-  <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="2021/04/">April 2021</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="2020/04/">April 2020</a><span class="archive-list-count">2</span></li></ul>
-</div>
-
-
-        <hr>
-    
-        <!-- Categories -->
-
-<h5><a href="/categories/">categories</a></h5>
-<div class="widget">
-  <ul>
-    
-    <a href="/categories/#Hexo-Theme-LiveMyLife">
-      <li>Hexo-Theme-LiveMyLife</li>
-    </a>
-    
-    <a href="/categories/#leetcode">
-      <li>leetcode</li>
-    </a>
-    
-    <a href="/categories/#bbd">
-      <li>bbd</li>
-    </a>
-    
-    <a href="/categories/#golang">
-      <li>golang</li>
-    </a>
-    
-  </ul>
-</div>
-
-
-        <hr>
-    
-</div>
-
-
-    
+          
+          <li>
+            <a href="https://v-vincen.life/" target="_blank">V_Vincen</a>
+          </li>
+          
+          <li>
+            <a href="http://beantech.org" target="_blank">Bean Tech</a>
+          </li>
+          
+          <li>
+            <a href="http://huangxuan.me" target="_blank">Hux Blog</a>
+          </li>
+          
+          <li>
+            <a href="https://hexo.io/" target="_blank">Hexo</a>
+          </li>
+          
+        </ul>
+        
+      </div>
+    </div>
   </div>
-</div>
+</article>
+
+
+
+<!-- anchorjs start -->
+<!-- async load function -->
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script type="text/javascript">
+  // async load function
+  function async (u, c) {
+    var d = document,
+      t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (c) {
+      o.addEventListener('load', function(e) {
+        c(null, e);
+      }, false);
+    }
+    s.parentNode.insertBefore(o, s);
+  };
+</script>
+<script type="text/javascript">
+  //anchor-js, Doc:http://bryanbraun.github.io/anchorjs/
+  async ("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js", function() {
+    anchors.options = {
+      visible: 'hover',
+      placement: 'left',
+      // icon: 'ℬ'
+      icon: '❡'
+    };
+    anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+  });
+</script>
+<style>
+  /* place left on bigger screen */
+  @media all and (min-width: 800px) {
+    .anchorjs-link {
+      position: absolute;
+      left: -0.75em;
+      font-size: 1.1em;
+      margin-top: -0.1em;
+    }
+  }
+</style>
+
+<!-- anchorjs end -->
+
 
 
 		<!-- Footer (contains ThemeColor、viewer) -->
@@ -851,7 +822,7 @@
     let jsdelivr = "https://cdn.jsdelivr.net/gh/";
     let gh = "V-Vincen";
     let ghPages = gh + ".github.io";
-    let pagePath = "archives/index.html";
+    let pagePath = "cn/代码解读记录/";
     let jsdelivrurl;
     if (pagePath.indexOf("index.html") != -1) {
       jsdelivrurl = jsdelivr + gh + "/" + ghPages;
