@@ -2,30 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://sijing233.com/undefined/Golangs-Learn-One/</loc>
+    <loc>http://sijing233.com/share/math-model-contest-timeline/</loc>
     
-    <lastmod>2021-04-20</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://sijing233.com/cn/Golangs-Two/</loc>
-    
-    <lastmod>2021-04-19</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://sijing233.com/cn/leetcode-01/</loc>
-    
-    <lastmod>2021-04-19</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://sijing233.com/cn/%E4%BB%A3%E7%A0%81%E8%A7%A3%E8%AF%BB%E8%AE%B0%E5%BD%95/</loc>
-    
-    <lastmod>2021-04-19</lastmod>
+    <lastmod>2021-05-11</lastmod>
     
   </url>
   
@@ -88,43 +67,22 @@
 
   <url>
     <loc>http://sijing233.com/</loc>
-    <lastmod>2021-04-20</lastmod>
+    <lastmod>2021-05-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
-    <loc>http://sijing233.com/tags/Golang/</loc>
-    <lastmod>2021-04-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://sijing233.com/tags/golangs-02/</loc>
-    <lastmod>2021-04-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://sijing233.com/tags/leetcode/</loc>
-    <lastmod>2021-04-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://sijing233.com/tags/Hexo-Theme-LiveMyLife/</loc>
-    <lastmod>2021-04-20</lastmod>
+    <lastmod>2021-05-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://sijing233.com/tags/bbd/</loc>
-    <lastmod>2021-04-20</lastmod>
+    <loc>http://sijing233.com/tags/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/</loc>
+    <lastmod>2021-05-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -132,36 +90,15 @@
 
   
   <url>
-    <loc>http://sijing233.com/categories/Golang/</loc>
-    <lastmod>2021-04-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://sijing233.com/categories/golangs-02/</loc>
-    <lastmod>2021-04-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://sijing233.com/categories/leetcode/</loc>
-    <lastmod>2021-04-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://sijing233.com/categories/Hexo-Theme-LiveMyLife/</loc>
-    <lastmod>2021-04-20</lastmod>
+    <lastmod>2021-05-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://sijing233.com/categories/bbd/</loc>
-    <lastmod>2021-04-20</lastmod>
+    <loc>http://sijing233.com/categories/%E5%88%86%E4%BA%AB/</loc>
+    <lastmod>2021-05-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
