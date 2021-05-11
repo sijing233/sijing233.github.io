@@ -22,7 +22,9 @@ Gitee Repo: https://gitee.com/V_Vincen/hexo-theme-livemylife
 
 ### [View LiveMyLife Blog ➾](https://v-vincen.github.io/)
 
-![LiveMyLife Desktop](livemylife-desktop.png)
+![liveMyLife desktop](livemylife-desktop.png)
+
+<!-- ![complex] -->
 
 ## Quick Start
 I publish the whole project for your convenience, so you can just follow the instruction down below, then you can easily customiz your own blog!
