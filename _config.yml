@@ -380,5 +380,5 @@ gitter:
 ##
 deploy:
   type: git
-  repo: https://github.com/sijing233/sijing233.github.io.git # or https://gitee.com/<yourAccount>/<repo>
+  repo: https://github.com/sijing233/sijing233.github.io.git #https://bitbucket.org/JohnSmith/johnsmith.bitbucket.io
   branch: master
