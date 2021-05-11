@@ -120,7 +120,7 @@ friends: [
 gitalk:
   owner: sijing233                         # 'GitHub repo owner'
   admin: sijing233                         # 'GitHub repo'
-  repo:                           # ['GitHub repo owner and collaborators, only these guys can initialize github issues']
+  repo: sijing233                          # ['GitHub repo owner and collaborators, only these guys can initialize github issues']
   clientID: 99fe5034f5246a483316                      # 'GitHub Application Client ID'
   clientSecret: 2a992536d282bf29b2a7293ae4dc9d1b30381373                  # 'GitHub Application Client Secret'
   perPage: 10                     # Pagination size, with maximum 100.
